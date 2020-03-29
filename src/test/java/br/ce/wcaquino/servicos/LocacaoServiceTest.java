@@ -10,11 +10,8 @@ import static org.junit.Assert.assertThat;
 
 import java.util.Date;
 
-import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ErrorCollector;
@@ -79,7 +76,6 @@ public class LocacaoServiceTest {
 			assertThat(e.getMessage(), is("Usuario vazio"));
 		}
 	}
-	
 
 	@Test
 	public void testLocacao_FilmeVazio() throws FilmeSemEstoqueException, LocadoraException{
